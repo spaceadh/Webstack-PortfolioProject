@@ -1,0 +1,175 @@
+.manage-products {
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+h3 {
+  font-size: 1.5rem; /* Adjust the heading font size */
+  margin-bottom: 20px; /* Add space below the heading */
+  text-align: center; /* Center the heading text */
+}
+
+form {
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Increase space between form fields */
+
+    label {
+      font-weight: bold;
+      font-size: 1rem; /* Adjust the label font size */
+      margin-bottom: 5px;
+    }
+
+    input {
+      padding: 10px; /* Add padding for better input field appearance */
+      border: 1px solid #ccc; /* Add a border */
+      border-radius: 4px; /* Add border radius for rounded corners */
+      font-size: 1rem; /* Adjust the input font size */
+    }
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: space-between; /* Align buttons horizontally */
+
+    button {
+      padding: 10px 20px; /* Add padding to the buttons */
+      border: none; /* Remove button border */
+      border-radius: 4px; /* Add border radius for rounded buttons */
+      font-size: 1rem; /* Adjust button font size */
+    }
+  }
+}
+
+.manage-products h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.manage-products__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.manage-products__summary {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.manage-products__summary h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.manage-products__summary p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product__list {
+  margin-top: 10px;
+}
+
+.manage-products__item {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.manage-products__name {
+  font-weight: 600;
+}
+
+.manage-products__price {
+  font-weight: 600;
+  color: #0077cc;
+}
+
+.edit-product-popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 999; /* Adjust the z-index as needed to ensure it's on top */
+
+  .edit-product-popup {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply elevation effect */
+    padding: 20px;
+    border-radius: 4px;
+  }
+  .edit-product-popup button{
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+}
+
+/* CSS for the delete confirmation pop-up */
+.delete-product-popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.delete-product-popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.delete-product-popup h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.delete-product-popup p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.delete-product-popup button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-product-popup button:hover {
+  background-color: #c0392b;
+}

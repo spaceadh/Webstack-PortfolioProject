@@ -1,0 +1,22 @@
+/* delete-product-popup.css */
+.delete-product-popup {
+    background-color: white;
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .delete-product-popup h3 {
+    margin: 0;
+  }
+  
+  .delete-product-popup p {
+    margin: 10px 0;
+  }
+  
+  .delete-product-popup button {
+    margin-top: 10px;
+  }
+  

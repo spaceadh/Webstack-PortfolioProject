@@ -1,0 +1,29 @@
+/* edit-product-popup.css */
+.edit-product-popup {
+    background-color: white;
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .edit-product-popup h3 {
+    margin: 0;
+  }
+  
+  .edit-product-popup label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .edit-product-popup input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .edit-product-popup button {
+    margin-top: 10px;
+  }
+  
