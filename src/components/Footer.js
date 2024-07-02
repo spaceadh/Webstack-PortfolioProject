@@ -10,7 +10,7 @@ const currency = ["KES - Ksh"];
 const footerLinks = [
   {
     title: "Get to Know Us",
-    list: ["About RosePharmacy ", "Shop with Us", "We provide quality"],
+    list: ["About Jaybee Cakes ", "Shop with Us", "We provide quality"],
   },
   {
     title: "Mpesa Payment",
@@ -43,8 +43,8 @@ function Footer() {
         <div className="footer__bottom">
           <img src={e_rayonLogo} className="footer__logo" alt="footer" />
           <span className="footer__copy">
-            &copy; 2023 | Developed by{" "}
-            <a href="https://aloha-kenya.co.ke/">RosePharmacy | KENYA</a>
+            &copy; 2024 | Developed by{" "}
+            <a href="https://github.com/spaceadh">Jaybee Cakes | KENYA</a>
           </span>
           </div>
       </div>

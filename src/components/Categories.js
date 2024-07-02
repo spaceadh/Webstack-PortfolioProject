@@ -3,18 +3,12 @@ import "./Categories.css";
 import { useStateValue } from "../StateProvider";
 
 const categories = [
-  "Diabetic Medications",
-  "Antidiarrheals",
-  "Antibiotics",
-  "Vaccines",
-  "Laxatives",
-  "Antihistamines",
-  "Antipyretics (Fever Reducers)",
-  "Antiseptics and Disinfectants",
-  "Analgesics (Pain Relievers)",
-  "Antiviral Medications",
-  "Antacids and Anti-Ulcerants",
-  ""
+  "Cakes",
+  "Bagels",
+  "Cupcakes",
+  "Doughnuts",
+  "Muffins",
+  "Cookies"
  ];
 
 function Categories() {
@@ -37,7 +31,7 @@ function Categories() {
         className="categories__category active"
         onClick={(e) => setActive(e, "all")}
       >
-        Pharmacy products
+        Our Bakery products
       </span>
       {categories.map((category) => (
         <span

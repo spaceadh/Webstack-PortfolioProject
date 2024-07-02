@@ -4,13 +4,15 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAkoj-Qgg6naftJq1PAbAv3hlLt3nnwXVg",
-  authDomain: "hospitalmanagment-e87e5.firebaseapp.com",
-  databaseURL: "https://hospitalmanagment-e87e5-default-rtdb.firebaseio.com",
-  projectId: "hospitalmanagment-e87e5",
-  storageBucket: "hospitalmanagment-e87e5.appspot.com",
-  messagingSenderId: "774783064434",
-  appId: "1:774783064434:web:858edca20f2371938725eb"
+  apiKey: "AIzaSyBzaItwwWPIiftTQIT1_bLnyU15NbTBBDM",
+  authDomain: "jaybiecakes-6d4b1.firebaseapp.com",
+  databaseURL: "https://jaybiecakes-6d4b1-default-rtdb.firebaseio.com",
+  projectId: "jaybiecakes-6d4b1",
+  storageBucket: "jaybiecakes-6d4b1.appspot.com",
+  messagingSenderId: "286183429962",
+  appId: "1:286183429962:web:2717bd9888488976b093b3",
+  measurementId: "G-GZ6RPV8DTD"
+
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

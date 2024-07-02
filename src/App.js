@@ -120,13 +120,11 @@ function App() {
 
     // pull firebase databse products
     async function fetchAllProducts() {
-      const products = await db.collection("medicine_inventory").get();
-      console.log(products);
+      const products = await db.collection("products").get();
       const productsObj = products.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
       }));
-      console.log(productsObj);
       dispatch({
         type: "SET_PRODUCTS",
         products: shuffleArray(productsObj),
@@ -147,8 +145,8 @@ function App() {
         <FloatingWhatsApp
           phone={process.env.REACT_APP_WHATSAPP_CONTACT}
           size="40px"
-          popupMessage="Hello, have a question about our Pharmacy Products?. We reply instantly"
-          headerTitle="Chat with a RosePharmacy"
+          popupMessage="Hello, have a question about our Bakery Products?. We reply instantly"
+          headerTitle="Chat with a JayBee agent"
         />
       </div>
 
@@ -199,6 +197,9 @@ function App() {
               </Route>
               <Route path="/auth">
                 <Auth />
+              </Route>
+              <Route path="/admin">
+                <AdminPage />
               </Route>
               <Route path="/ManageProducts">
                 <ManageProductsPage />

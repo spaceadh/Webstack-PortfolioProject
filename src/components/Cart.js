@@ -53,7 +53,6 @@ function Cart() {
               checkout.
             </p>
             <div className="buttons">
-              {/* <Link to={user ? "/payment" : "/signup?next=payment"}> */}
               <Link to={user ? "/payment" : "/signup?next=payment"}>
                 <button className="buttonPrimary">Proceed to Payment</button>
               </Link>
@@ -75,7 +74,7 @@ function Cart() {
             <h4>Your cart feels lonely.</h4>
             <p style={{ marginBottom: "3rem" }}>
               Your shopping cart lives to serve. Give it purpose - fill it with
-              books, electronicts, videos, etc. and make it happy.
+              cakes, bagels, chocolates etc. and make it happy.
             </p>
             <div className="buttons">
               <Link to="/">
