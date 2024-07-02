@@ -96,6 +96,9 @@ function Payment() {
     if (phoneHolder.length !== 10) {
       return toast.error("Enter a valid phone number");
     }
+    if (!/^07|011/.test(phoneHolder)) {
+      return toast.error("Enter a valid phone number starting with 07 or 011");
+    }    
 
     function generateOrderId() {
       const randomString = Math.random().toString(36).substring(2, 8).toUpperCase();
